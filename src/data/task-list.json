@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Application Setup",
+        "status": "completed",
+        "business_context": [
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            },
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            }
+        ]
+    },
+    {
+        "title": "Static Books List",
+        "status": "completed",
+        "business_context": [
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            },
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            }
+        ]
+    },
+    {
+        "title": "Administration Panel",
+        "status": "completed",
+        "business_context": [
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            },
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            }
+        ]
+    },
+    {
+        "title": "Connect Admin with Frontend",
+        "status": "active",
+        "business_context": [
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            },
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            }
+        ]
+    },
+    {
+        "title": "Book Review Feature",
+        "status": "locked",
+        "business_context": [
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            },
+            {
+                "author": "Kristen Aniston",
+                "date": "17.12.2021",
+                "time": "11:20",
+                "title": "New sprint",
+                "description": "Hi Eric, congratulations on completing your latest assignment."
+            }
+        ]
+    }
+]
