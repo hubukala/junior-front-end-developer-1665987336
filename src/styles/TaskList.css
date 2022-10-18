@@ -1,0 +1,56 @@
+.TaskContainer {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-width: 320px;
+    height: 785px;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.TaskNav {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    border-bottom: 2px solid #F4F5F7;
+}
+
+.TaskTitle {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.TaskContent {
+    display: flex;
+    padding: 20px;
+}
+
+.TaskListStyled {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.TaskListItem {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    gap: 8px;
+}
+
+.CheckIcon {
+    color: #47BF7C
+}
+
+.ActiveIcon {
+    color: #0165FF;
+}
+
+.LockedIcon {
+    color: #6B778C;
+}
