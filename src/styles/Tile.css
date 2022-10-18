@@ -1,0 +1,48 @@
+.TileBox {
+    display: flex;
+    flex-direction: column;
+    height: 12%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.TileBox:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.092);
+}
+
+.TileInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #6B778C;
+    gap: 10px;
+}
+
+.TileTitle {
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #0165FF;
+}
+
+.TileContent {
+    margin: 0;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #6B778C;
+}
+
+.NewIcon {
+    font-size: 10px;
+    background-color: #0165FF;
+    border: 5px solid #0165FF;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 5px;
+}

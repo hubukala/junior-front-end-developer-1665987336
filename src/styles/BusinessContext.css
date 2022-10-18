@@ -1,0 +1,81 @@
+.BusinessContextContainer {
+    display: flex;
+    flex-direction: column;
+    height: 785px;
+    width: 75%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.BusinessContextNav {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    border-bottom: 2px solid #F4F5F7;
+}
+
+.CompassIcon {
+    padding: 0px 10px 0px 20px;
+}
+
+.BusinessContextTitle {
+    font-size: 12px;
+}
+
+.ContentContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.TilesBox {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 700px;
+    background: #F4F5F7;
+    margin: 0px 0px 5px 5px;
+    border-radius: 0px 0px 0px 12px;
+}
+
+.MessageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 65%;
+}
+
+.MessageBoxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.MessageInfo {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.MessageAuthor {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.MessageInfoDetails {
+    font-size: 12px;
+    color: #6B778C;
+}
+
+.MessageBoxTitle {
+    font-size: 18px;
+}
+
+.MessageBoxParagraph {
+    font-size: 12px;
+    line-height: 24px;
+    color: #6B778C;
+    text-align: left;
+}
