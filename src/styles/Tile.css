@@ -19,6 +19,8 @@
     font-size: 12px;
     color: #6B778C;
     gap: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .TileTitle {
