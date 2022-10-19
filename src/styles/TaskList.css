@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 25%;
+    min-width: 245px;
     height: 785px;
     background: #FFFFFF;
     border-radius: 12px;
@@ -32,14 +33,25 @@
     text-indent: 0;
     list-style-type: none;
     gap: 15px;
+    width: 100%;
 }
 
-.TaskListItem {
+.TaskListItem, .TaskListItemLocked {
     display: flex;
     align-items: center;
     font-size: 12px;
     font-weight: 500;
     gap: 8px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.TaskListItemLocked {
+    pointer-events: none;
+}
+
+.TaskListItem:hover {
+    font-weight: 800;
 }
 
 .CheckIcon {

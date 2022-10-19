@@ -1,8 +1,9 @@
-import '../styles/TaskList.css'
-import taskList from '../data/task-list.json'
-import { FaCheck, FaArrowRight, FaLock } from 'react-icons/fa'
+import '../styles/TaskList.css';
+import taskList from '../data/task-list.json';
+import { FaCheck, FaArrowRight, FaLock } from 'react-icons/fa';
+import { NavLink } from "react-router-dom";
 
-function TaskList() {
+function TaskList({ setCurrentTask }) {
 
     const insertIcon = (task) => {
         if (task === "completed") {
@@ -15,9 +16,17 @@ function TaskList() {
     }
 
     const mappedList = taskList.map((task) => 
-        <li className='TaskListItem'>
-            {insertIcon(task.status)}
-            {task.title}
+        <li 
+            key={task.title} 
+            onClick={() => task.status !== "locked" ? setCurrentTask(task.title) : null}
+        >
+            <NavLink to=
+                {"/task/"+(task.title).replace(/\s+/g, '-').toLowerCase()} 
+                className={() => task.status==="locked" ? "TaskListItemLocked" : "TaskListItem"}
+            >
+                {insertIcon(task.status)}
+                {task.title}
+            </NavLink>
         </li>
     )
 

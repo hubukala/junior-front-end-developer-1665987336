@@ -11,7 +11,7 @@
             },
             {
                 "author": "Kristen Aniston",
-                "title": "New sprint",
+                "title": "Account created",
                 "content": "Hi Eric, congratulations on completing your latest assignment.",
                 "created_at": "2021-01-01"
             }
@@ -22,14 +22,14 @@
         "status": "completed",
         "business_context": [
             {
-                "author": "Kristen Aniston",
-                "title": "New sprint",
+                "author": "Robert Aniston",
+                "title": "Styles update",
                 "content": "Hi Eric, congratulations on completing your latest assignment.",
                 "created_at": "2021-01-01"
             },
             {
-                "author": "Kristen Aniston",
-                "title": "New sprint",
+                "author": "Robert Aniston",
+                "title": "Refactor",
                 "content": "Hi Eric, congratulations on completing your latest assignment.",
                 "created_at": "2021-01-01"
             }
@@ -40,32 +40,32 @@
         "status": "completed",
         "business_context": [
             {
-                "author": "Kristen Aniston",
-                "title": "New sprint",
+                "author": "Mark Aniston",
+                "title": "New feature",
                 "content": "Hi Eric, congratulations on completing your latest assignment.",
                 "created_at": "2021-01-01"
             },
             {
-                "author": "Kristen Aniston",
-                "title": "New sprint",
+                "author": "Mark Aniston",
+                "title": "Latest sprint",
                 "content": "Hi Eric, congratulations on completing your latest assignment.",
                 "created_at": "2021-01-01"
             }
         ]
     },
     {
-        "title": "Connect Admin with Frontend",
+        "title": "Connect Admin With Frontend",
         "status": "active",
         "business_context": [
             {
-                "author": "Kristen Aniston",
-                "title": "New sprint",
+                "author": "Chrissy Aniston",
+                "title": "Code review",
                 "content": "Hi Eric, congratulations on completing your latest assignment.",
                 "created_at": "2021-01-01"
             },
             {
-                "author": "Kristen Aniston",
-                "title": "New sprint",
+                "author": "Chrissy Aniston",
+                "title": "Clean code",
                 "content": "Hi Eric, congratulations on completing your latest assignment.",
                 "created_at": "2021-01-01"
             }
@@ -76,14 +76,14 @@
         "status": "locked",
         "business_context": [
             {
-                "author": "Kristen Aniston",
-                "title": "New sprint",
+                "author": "Monica Aniston",
+                "title": "Add plugin",
                 "content": "Hi Eric, congratulations on completing your latest assignment.",
                 "created_at": "2021-01-01"
             },
             {
-                "author": "Kristen Aniston",
-                "title": "New sprint",
+                "author": "Monica Aniston",
+                "title": "Video call",
                 "content": "Hi Eric, congratulations on completing your latest assignment.",
                 "created_at": "2021-01-01"
             }
