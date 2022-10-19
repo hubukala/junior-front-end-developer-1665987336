@@ -1,8 +1,24 @@
 import '../styles/BusinessContext.css'
 import Tile from './Tile';
-import { FaRegCompass } from 'react-icons/fa'
+import { FaRegCompass } from 'react-icons/fa';
+import taskList from '../data/task-list.json';
+// import { useParams } from 'react-router-dom';
 
-function BusinessContext() {
+function BusinessContext({ showCurrentTask }) {
+
+    const currentTitle = showCurrentTask;
+
+    const createTiles = taskList.find(
+        (task => task.title === currentTitle)).business_context.map((item) => 
+        <Tile 
+            key={item.title}
+            author={item.author}
+            created_at={item.created_at}
+            title={item.title}
+            content={item.content}
+        />
+    )
+
     return (
         <div className='BusinessContextContainer'>
             <div className='BusinessContextNav'>
@@ -11,10 +27,7 @@ function BusinessContext() {
             </div>
             <div className='ContentContainer'>
                 <div className='TilesBox'>
-                    <Tile 
-                        author={"Kristen Aniston"}
-                        created_at={"01 Dec 2022"}
-                    />
+                    {createTiles}
                 </div>
                 <div className='MessageBox'>
                     <h1 className='MessageBoxTitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
