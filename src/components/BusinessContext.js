@@ -1,21 +1,44 @@
-import '../styles/BusinessContext.css'
-import Tile from './Tile';
-import { FaRegCompass } from 'react-icons/fa';
+import '../styles/BusinessContext.css';
 import taskList from '../data/task-list.json';
-// import { useParams } from 'react-router-dom';
+import {useState} from 'react';
+import { FaRegCompass } from 'react-icons/fa';
+import Tile from './Tile';
+import MessageBox from './MessageBox';
 
-function BusinessContext({ showCurrentTask }) {
+function BusinessContext({ 
+    showCurrentTask,
+    showCurrentTitle,
+    setCurrentTitle,
+    showMessageAuthor,
+    setMessageAuthor,
+    setMessageAuthorImage,
+    showMessageAuthorImage,
+    setMessageCreated, 
+    showMessageCreated,
+    setMessageContent,
+    showMessageContent
+}) {
 
-    const currentTitle = showCurrentTask;
+    const [showIcon, setShowIcon] = useState([])
 
     const createTiles = taskList.find(
-        (task => task.title === currentTitle)).business_context.map((item) => 
-        <Tile 
+        (task => task.title === showCurrentTask)).business_context.map((item) => 
+        <Tile
             key={item.title}
-            author={item.author}
-            created_at={item.created_at}
-            title={item.title}
-            content={item.content}
+            setCurrentTitle={setCurrentTitle}
+            showCurrentTitle={showCurrentTitle}
+            setMessageAuthor={setMessageAuthor}
+            setMessageAuthorImage={setMessageAuthorImage}
+            setMessageCreated={setMessageCreated}
+            setMessageContent={setMessageContent}
+            showIcon={showIcon}
+            setShowIcon={setShowIcon}
+            props={{
+                author: item.author,
+                created_at: item.created_at,
+                title: item.title,
+                content: item.content
+            }}
         />
     )
 
@@ -29,24 +52,16 @@ function BusinessContext({ showCurrentTask }) {
                 <div className='TilesBox'>
                     {createTiles}
                 </div>
-                <div className='MessageBox'>
-                    <h1 className='MessageBoxTitle'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-                    <div className='MessageBoxContent'>
-                        <div className='MessageInfo'>
-                            <span className='MessageAuthor'>Kristen Aniston</span>
-                            <span className='MessageInfoDetails'>• 01 Dec 2022 •</span>
-                        </div>
-                        <p className='MessageBoxParagraph'>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                            Temporibus corporis iste rem delectus, eveniet numquam, nostrum, 
-                            error deserunt tenetur asperiores molestias illo voluptatum provident iusto consequatur. 
-                            Cupiditate enim repellat cumque!
-                        </p>
-                    </div>
-                </div>
+                <MessageBox
+                    title={showCurrentTitle}
+                    author={showMessageAuthor}
+                    created_at={showMessageCreated}
+                    content={showMessageContent}
+                    image={showMessageAuthorImage}
+                />
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default BusinessContext;
