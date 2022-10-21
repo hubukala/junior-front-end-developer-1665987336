@@ -1,0 +1,53 @@
+.MessageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 65%;
+}
+
+.MessageBoxContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.MessageInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.MessageAuthorImage {
+    border-radius: 50px;
+}
+
+.MessageDetails {
+    display: inline;
+}
+
+.MessageAuthor {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.MessageCreatedAt {
+    font-size: 10px;
+    color: #6B778C;
+    padding: 5px;
+}
+
+.MessageBoxTitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.MessageBoxParagraph {
+    font-size: 12px;
+    line-height: 24px;
+    color: #6B778C;
+    text-align: left;
+    margin-left: 62px;
+}

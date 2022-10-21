@@ -36,7 +36,7 @@
     width: 100%;
 }
 
-.TaskListItem, .TaskListItemLocked {
+.TaskListItem, .TaskListItemLocked, .TaskListItemActive {
     display: flex;
     align-items: center;
     font-size: 12px;
@@ -50,7 +50,7 @@
     pointer-events: none;
 }
 
-.TaskListItem:hover {
+.TaskListItem:hover, .TaskListItemActive {
     font-weight: 800;
 }
 
